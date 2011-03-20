@@ -16,7 +16,7 @@ class JenkinsBuildsRepositoryService {
 			  label: build.number.text(),
 			  date: build.id.text(),
 			  durationMs: build.duration.text(),
-			  passed: build.result.text()
+			  status: build.result.text()
 		  )
 		}
     }

@@ -8,7 +8,7 @@ package org.tonybaines.radiator.domain
 
 	static Build fromStringValues(Map props) {
 		new Build(label: props.label,
-			date: new Date().parse('yyyy-MM-dd HH:mm:ss +SSSS', props.date),
+			date: new Date().parse('yyyy-MM-dd_HH-mm-ss', props.date),
 			durationMs: props.durationMs.toLong(),
 			passed: ("SUCCESS" == props.status) ? true : false
 		   )

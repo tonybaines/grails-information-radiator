@@ -1,7 +1,6 @@
 package org.tonybaines.radiator.domain
 
-import grails.plugin.spock.UnitSpec;
-import grails.test.*
+import grails.plugin.spock.UnitSpec
 
 
 class BuildSpec extends UnitSpec {
@@ -14,9 +13,9 @@ class BuildSpec extends UnitSpec {
 			passed: status
 		)
 		where:
-		   num  |          dateTime          | duration | status
-		   "1"  | "2011-02-15 22:01:35 +0000"| "100"    | "SUCCESS"
-		   "2"  | "2011-02-15 22:01:35 +0001"| "100"    | "FAILURE"
+		   num  |       dateTime       | duration | status
+		   "1"  | "2011-01-02_11-17-25"| "100"    | "SUCCESS"
+		   "2"  | "2011-01-02_11-17-28"| "100"    | "FAILURE"
 	}
 	
 }

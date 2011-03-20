@@ -6,6 +6,7 @@ An information radiator should be able to visualise significant information for 
 * Stories - titles, owners, remaining effort
   * Burn-down
 * Issues - e.g. JIRA
+* Wiki updates - e.g. Confluence
 * Commits - who, when, comment
   * Maybe sensitive to special flags e.g. #refactoring, @named-user
   * Tagging/branching-aware

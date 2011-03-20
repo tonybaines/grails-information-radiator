@@ -1,0 +1,35 @@
+An information radiator should be able to visualise significant information for a project
+* CI Builds - standard/load-test/...
+* Instances - e.g. via Nagios, JMX or custom API
+  * Health
+  * Load/activity
+* Stories - titles, owners, remaining effort
+  * Burn-down
+* Issues - e.g. JIRA
+* Commits - who, when, comment
+  * Maybe sensitive to special flags e.g. #refactoring, @named-user
+  * Tagging/branching-aware
+* Trends of interest - line graphs, pie charts
+  * a simple abstraction of e.g. label, x-value, y-value open to whatever is important at the time
+* Message Of The Day
+  * Pull from Atom feed
+
+Technologies
+------------
+
+* Grails
+* RESTful (JSON) exposure from controllers
+* jQuery view-layer
+* Data-Sources/Pollers - realtime and trending
+
+
+Possibilities
+-------------
+
+* A DSL (like Conky has) for describing the view?
+page(width: 16, height: 9) {
+  "Builds": hudson(apiUrl: 'http://....', width: 3, height: 9)
+  "Issues": jira(apiUrl: 'http://...', width: 3)
+  ...
+}
+* 

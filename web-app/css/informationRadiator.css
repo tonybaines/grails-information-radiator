@@ -1,0 +1,6 @@
+tr.buildPassed {
+	background-color: lightgreen
+}
+tr.buildFailed {
+	background-color: red
+}

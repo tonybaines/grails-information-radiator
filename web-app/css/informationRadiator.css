@@ -1,6 +1,25 @@
-tr.buildPassed {
-	background-color: lightgreen
+table.builds {
+	border: thin 10;
 }
-tr.buildFailed {
-	background-color: red
+button.buildPassed {
+	background-color: lightgreen;
+	color: white;
+	opacity: 1;
+	font-size: small;
+}
+button.buildFailed {
+	background-color: red;
+	color: white;
+	opacity: 1;
+	font-size: small;
+}
+button.projectPassed {
+	background-color: lightgreen;
+	color: white;
+	opacity: 1;
+}
+button.projectFailed {
+	background-color: red;
+	color: white;
+	opacity: 1;
 }

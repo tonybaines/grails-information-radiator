@@ -10,7 +10,7 @@ class JenkinsBuildsController {
 	def list = {
 		def jobUri = params.jobUri
 		response.contentType="text/json"
-		if (jobUri) render jenkinsBuildsRepositoryService.buildsFor(jobUri) as JSON
+		if (jobUri) render jenkinsBuildsRepositoryService.lastTenBuildsFor(jobUri) as JSON
 		else render new Error(status: 400, message: "'jobUri' parameter expected").encodeAsJSON()
 	}
 }

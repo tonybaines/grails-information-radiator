@@ -1,6 +1,7 @@
-table.builds {
-	border: thin 10;
+body {
+	font-family: sans-serif;
 }
+
 button.buildPassed {
 	background-color: lightgreen;
 	color: white;

@@ -15,7 +15,7 @@
     </head>
     <body>
 		    <div id="jobs" class="ui-layout-north">
-		    	<table border="1">
+		    	<table>
 		    		<tr>
 		    			<!-- Dummy content -->
 		    			<th>Projects:</th>
@@ -28,7 +28,7 @@
 		    	</table>
 		    </div>
 			<div id="builds"class="ui-layout-west">
-				<table id="buildList" class="builds" border="1"/>
+				<table id="buildList" class="builds"/>
 			</div>
     </body>
 </html>

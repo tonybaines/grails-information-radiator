@@ -3,10 +3,9 @@ function getJenkinsBuilds(jobUri) {
 }
 
 var assembleBuildList = function(data) {
-	var builds = $('table#buildList.builds').html('<tbody/>').append('<tr><th>Builds</th></tr>')
+	var builds = $('#builds')
 	$(data).each( function( ind, build ) {
-	     builds.append('<tr><td>'+'<button class="'+classForBuildStatus(build.passed)+'" disabled="disabled">Build '+build.label+'</button>'+
-          '</td></tr>');
+	     builds.append('<button class="'+classForBuildStatus(build.passed)+'" disabled="disabled">Build '+build.label+'</button>');
 	    } );
 	$('button').button();
 }

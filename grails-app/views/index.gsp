@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>Information Radiator</title>
-        <link rel="stylesheet" href="${resource(dir:'css',file:'informationRadiator.css')}" />
+
         <less:stylesheet name="informationRadiator" />
     	<less:scripts />
-        
+    	
         <g:javascript library="jquery" plugin="jquery"/>
         <jqui:resources/>
         <g:javascript src="informationRadiator.js"/>
@@ -13,27 +13,32 @@
         <script type="text/javascript">
         $(document).ready(function() {
         	getJenkinsBuilds('http://store:8080/job/Test-narc');
-        	//layout();
+        	layout();
         });
         </script>
     </head>
     <body>
+    	<div class="container">
 		    <div id="jobs">
-		    	<table>
-		    		<tr>
-		    			<!-- Dummy content -->
-		    			<th>Projects</th>
-		    			<td><button class="projectPassed" disabled="disabled">Project-1</button></td>
-		    			<td><button class="projectPassed" disabled="disabled">Project-2</button></td>
-		    			<td><button class="projectFailed" disabled="disabled">Project-3</button></td>
-		    			<td><button class="projectPassed" disabled="disabled">Project-4</button></td>
-		    			<td><button class="projectPassed" disabled="disabled">Project-5</button></td>
-		    		</tr>
-		    		<tr><td colspan="6"><hr/></td></tr>
-		    	</table>
+    			<!-- Dummy content -->
+    			<button class="projectPassed" disabled="disabled">Project-1</button>
+    			<button class="projectPassed" disabled="disabled">Project-2</button>
+    			<button class="projectFailed" disabled="disabled">Project-3</button>
+    			<button class="projectPassed" disabled="disabled">Project-4</button>
+    			<button class="projectPassed" disabled="disabled">Project-5</button>
+	    		<hr/>
 		    </div>
-			<div id="builds">
-				<table id="buildList" class="builds"/>
+			<div id="builds" />
+			<div id="main">
+				Main content goes here
 			</div>
+			<div id="commits">
+				<p>10 dhjskhfkdsjhflks</p>
+				<p>12 fjdskl;jfldkszjlds</p>
+			</div>
+			<div id="motd">
+				<p>Message of the day ...</p>
+			</div>
+		</div>
     </body>
 </html>
